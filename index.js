@@ -1,5 +1,5 @@
-unction getFirstSelector(sel){
-  return document.querySelector(sel)
+function getFirstSelector(selector){
+  return document.querySelector(selector)
 }
 
 function nestedTarget(){
@@ -11,8 +11,8 @@ function increaseRankBy(n){
   const l = lis.length
   for (let i = 0; i < l; i++){
     for (let j = 0; j < lis[i].children.length; j++){
-      let newVal = parseInt(lis[i].children[j].innerHTML) + n
-      lis[i].children[j].innerHTML = newVal.toString()
+      let val = parseInt(lis[i].children[j].innerHTML) + n
+      lis[i].children[j].innerHTML = val.toString()
     }
   }
 }
